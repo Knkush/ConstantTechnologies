@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+def main
+  pod 'Swinject', '~> 2.6.0'
+  pod 'SwinjectAutoregistration', '2.5.0'
+end
+
+target 'ConstantTechnologies' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Bond', '~> 7.4.1'
+  main
+end
+
+target 'ConstantTechnologiesCore' do
+  use_frameworks!
+
+  pod 'PromisesSwift', '~> 1.2.8'
+  main
+end
+
+target 'ConstantTechnologiesViewModels' do
+   use_frameworks!
+
+  pod 'Bond', '~> 7.4.1'
+  pod 'PromisesSwift', '~> 1.2.8'
+  main
+end

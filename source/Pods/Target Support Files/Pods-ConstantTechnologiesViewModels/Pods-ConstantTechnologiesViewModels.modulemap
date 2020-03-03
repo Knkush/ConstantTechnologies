@@ -1,0 +1,6 @@
+framework module Pods_ConstantTechnologiesViewModels {
+  umbrella header "Pods-ConstantTechnologiesViewModels-umbrella.h"
+
+  export *
+  module * { export * }
+}
