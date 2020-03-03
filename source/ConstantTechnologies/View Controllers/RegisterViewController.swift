@@ -26,8 +26,13 @@ class RegisterViewController: UIViewController {
         
         let alert =  UIAlertController(title: "Photo source", message: "Choose a sourse", preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action: UIAlertAction) in
-            imagePickerController.sourceType = .camera
-            self.present(imagePickerController, animated: true, completion: nil)
+            
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                imagePickerController.sourceType = .camera
+                self.present(imagePickerController, animated: true, completion: nil)
+            } else {
+                print("Camera is not available")
+            }
         }))
         alert.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action: UIAlertAction) in
             imagePickerController.sourceType = .photoLibrary
