@@ -10,6 +10,7 @@ import UIKit
 import ConstantTechnologiesViewModels
 
 class CommandableButton: UIButton {
+    
     var command: ICommand? {
         didSet {
             self.addTarget(self, action: #selector(self.execute), for: .touchUpInside)

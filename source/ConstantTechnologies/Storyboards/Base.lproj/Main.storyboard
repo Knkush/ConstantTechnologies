@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIB-aM-m0U">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIB-aM-m0U">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,7 +14,7 @@
             <objects>
                 <viewController storyboardIdentifier="RegisterViewController" id="BYZ-38-t0r" customClass="RegisterViewController" customModule="ConstantTechnologies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgbb" translatesAutoresizingMaskIntoConstraints="NO" id="Ch2-Rw-nqu">
@@ -51,7 +49,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-np-yXp" userLabel="First Container View">
-                                <rect key="frame" x="40" y="270" width="295" height="333"/>
+                                <rect key="frame" x="40" y="270" width="295" height="353"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9uO-dC-oKP">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="195"/>
@@ -71,7 +69,6 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="1Ls-L9-g6H"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     </textField>
@@ -101,7 +98,6 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="XM3-dY-Y9s"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     </textField>
@@ -131,7 +127,6 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="3Ir-Rq-NXc"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     </textField>
@@ -149,7 +144,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWh-o3-kgi">
-                                        <rect key="frame" x="97.5" y="243" width="100" height="40"/>
+                                        <rect key="frame" x="97.5" y="263" width="100" height="40"/>
                                         <color key="backgroundColor" name="Orange"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="CG5-c6-u87"/>
@@ -175,7 +170,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1r-vb-g2D" userLabel="Second Container View">
-                                <rect key="frame" x="40" y="270" width="295" height="333"/>
+                                <rect key="frame" x="40" y="270" width="295" height="353"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqK-Nm-Ueo">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="55"/>
@@ -191,7 +186,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Qmr-Pr-bT8"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -206,10 +200,10 @@
                                             <constraint firstAttribute="bottom" secondItem="njM-vB-RNi" secondAttribute="bottom" id="vme-cR-hAf"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsy-n7-xQf">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsy-n7-xQf" customClass="RadioButtonsContainer" customModule="ConstantTechnologies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="295" height="55"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEL-K8-hHS">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEL-K8-hHS" customClass="RadioButton" customModule="ConstantTechnologies" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="12.5" width="110" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSA-iQ-3ii" userLabel="Passport">
@@ -226,28 +220,22 @@
                                                             <constraint firstAttribute="width" constant="22" id="Z6P-KL-Ca9"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUv-Hy-y8n">
-                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
-                                                        <connections>
-                                                            <action selector="passportButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfK-ch-sGg"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="dUv-Hy-y8n" secondAttribute="bottom" id="5aa-5n-0wK"/>
                                                     <constraint firstAttribute="height" constant="30" id="5fN-HG-dZT"/>
-                                                    <constraint firstAttribute="trailing" secondItem="dUv-Hy-y8n" secondAttribute="trailing" id="BZK-b8-C1n"/>
-                                                    <constraint firstItem="dUv-Hy-y8n" firstAttribute="top" secondItem="gEL-K8-hHS" secondAttribute="top" id="ILQ-z1-AFc"/>
                                                     <constraint firstAttribute="width" constant="110" id="Ugz-cr-BIG"/>
                                                     <constraint firstItem="fmb-P6-Azf" firstAttribute="centerY" secondItem="gEL-K8-hHS" secondAttribute="centerY" id="ay8-f0-T1t"/>
-                                                    <constraint firstItem="dUv-Hy-y8n" firstAttribute="leading" secondItem="gEL-K8-hHS" secondAttribute="leading" id="grf-qQ-QVJ"/>
                                                     <constraint firstItem="fmb-P6-Azf" firstAttribute="leading" secondItem="gEL-K8-hHS" secondAttribute="leading" id="vVn-OV-Hva"/>
                                                     <constraint firstItem="hSA-iQ-3ii" firstAttribute="centerY" secondItem="gEL-K8-hHS" secondAttribute="centerY" id="wgo-ZO-bJQ"/>
                                                     <constraint firstItem="hSA-iQ-3ii" firstAttribute="leading" secondItem="fmb-P6-Azf" secondAttribute="trailing" constant="15" id="yAt-Xm-0QM"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="radioImageView" destination="fmb-P6-Azf" id="wdU-P4-zvM"/>
+                                                    <outlet property="textLabel" destination="hSA-iQ-3ii" id="bht-F7-jce"/>
+                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYy-sD-ly7">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYy-sD-ly7" customClass="RadioButton" customModule="ConstantTechnologies" customModuleProvider="target">
                                                 <rect key="frame" x="140" y="12.5" width="120" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxq-ph-H8K">
@@ -264,23 +252,20 @@
                                                             <constraint firstAttribute="width" constant="22" id="e1C-Kz-gZK"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nn-Qy-e7F">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
-                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="lxq-ph-H8K" firstAttribute="leading" secondItem="1SA-iY-wvL" secondAttribute="trailing" constant="15" id="0wF-W8-jwS"/>
-                                                    <constraint firstItem="2nn-Qy-e7F" firstAttribute="top" secondItem="BYy-sD-ly7" secondAttribute="top" id="2Mp-G1-a4p"/>
                                                     <constraint firstItem="lxq-ph-H8K" firstAttribute="centerY" secondItem="BYy-sD-ly7" secondAttribute="centerY" id="Af2-lk-XAA"/>
                                                     <constraint firstItem="1SA-iY-wvL" firstAttribute="leading" secondItem="BYy-sD-ly7" secondAttribute="leading" id="JBP-PT-fHW"/>
-                                                    <constraint firstItem="2nn-Qy-e7F" firstAttribute="leading" secondItem="BYy-sD-ly7" secondAttribute="leading" id="MJ9-ct-dtb"/>
                                                     <constraint firstAttribute="width" constant="120" id="XQ1-lf-Fhn"/>
                                                     <constraint firstAttribute="height" constant="30" id="aHi-K2-KfS"/>
-                                                    <constraint firstAttribute="bottom" secondItem="2nn-Qy-e7F" secondAttribute="bottom" id="cV8-nT-Mkd"/>
-                                                    <constraint firstAttribute="trailing" secondItem="2nn-Qy-e7F" secondAttribute="trailing" id="fYH-le-Og4"/>
                                                     <constraint firstItem="1SA-iY-wvL" firstAttribute="centerY" secondItem="BYy-sD-ly7" secondAttribute="centerY" id="q2b-Er-MTv"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="radioImageView" destination="1SA-iY-wvL" id="cNR-m7-xhC"/>
+                                                    <outlet property="textLabel" destination="lxq-ph-H8K" id="Rk2-6A-RiU"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -290,13 +275,16 @@
                                             <constraint firstItem="gEL-K8-hHS" firstAttribute="leading" secondItem="Qsy-n7-xQf" secondAttribute="leading" id="xkQ-xc-BB4"/>
                                             <constraint firstItem="BYy-sD-ly7" firstAttribute="leading" secondItem="gEL-K8-hHS" secondAttribute="trailing" constant="30" id="zzE-0W-NLD"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="idNumberRadioButton" destination="BYy-sD-ly7" id="hcd-l1-g4m"/>
+                                            <outlet property="passportRadioButton" destination="gEL-K8-hHS" id="c3x-E1-atG"/>
+                                        </connections>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nI-Q7-gDi">
                                         <rect key="frame" x="0.0" y="140" width="295" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="A78-hD-xqH"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -337,9 +325,7 @@
                     <navigationItem key="navigationItem" title="Register" id="0bd-gl-Zs7"/>
                     <connections>
                         <outlet property="profileImageView" destination="Ch2-Rw-nqu" id="n3B-UI-oC3"/>
-                        <outletCollection property="fieldsLabel" destination="hSA-iQ-3ii" collectionClass="NSMutableArray" id="ZEm-hb-2ar"/>
-                        <outletCollection property="fieldsLabel" destination="lxq-ph-H8K" collectionClass="NSMutableArray" id="ASd-jd-yAa"/>
-                        <outletCollection property="fieldsImageView" destination="fmb-P6-Azf" collectionClass="NSMutableArray" id="OOi-p0-WSc"/>
+                        <outlet property="radioButtonsContainer" destination="Qsy-n7-xQf" id="PD1-Nj-HnX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -352,7 +338,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dIB-aM-m0U" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="mZc-0N-uCs">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="Purple"/>
                         <textAttributes key="titleTextAttributes">
@@ -371,7 +357,7 @@
     </scenes>
     <resources>
         <image name="imgCamera" width="128" height="128"/>
-        <image name="imgRadioButtonOn" width="256" height="256"/>
+        <image name="imgRadioButtonOn" width="128" height="128"/>
         <image name="imgbb" width="256" height="256"/>
         <namedColor name="Orange">
             <color red="0.95294117647058818" green="0.58431372549019611" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

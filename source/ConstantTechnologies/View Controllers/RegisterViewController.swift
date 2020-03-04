@@ -10,40 +10,20 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet private var fieldsLabel: [UILabel]!
-    @IBOutlet private var fieldsImageView: [UIImageView]!
+    @IBOutlet private weak var radioButtonsContainer: RadioButtonsContainer!
     
     private var isSelected = true
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.radioButtonsContainer.isPassportActive.distinctUntilChanged().observeNext { (isActive) in
+            print("passport active is \(isActive)")
+        }.dispose(in: self.bag)
     }
     
-    // MARK: - Private Methods -
-    
-    private func radioButton(_ labelNumber: Int, _ imageViewNumber: Int) {
-        self.isSelected = !self.isSelected
-        
-        if self.isSelected {
-            self.fieldsImageView[imageViewNumber].image = #imageLiteral(resourceName: "imgRadioButtonOff")
-        self.fieldsImageView[imageViewNumber].tintColor = UIColor.darkGray
-            self.fieldsLabel[labelNumber].textColor = UIColor.darkGray
-        } else {
-            self.fieldsImageView[imageViewNumber].image = #imageLiteral(resourceName: "imgRadioButtonOn")
-            self.fieldsImageView[imageViewNumber].tintColor = UIColor(named: "Orange")
-            self.fieldsLabel[labelNumber].textColor = UIColor.black
-        }
-        
-    }
     
     // MARK: - IBAction Methods -
-    
-    @IBAction func passportButtonTapped(_ sender: UIButton) {
-        self.radioButton(0, 0)
-    }
-    
-    
     
     @IBAction func chooseImageButtonTapped(_ sender: UIButton) {
         let imagePickerController = UIImagePickerController()

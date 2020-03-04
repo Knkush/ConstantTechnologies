@@ -36,6 +36,8 @@
 		D405F460240EE02300C2E768 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F45F240EE02300C2E768 /* UIView+Extension.swift */; };
 		D405F462240EEC0200C2E768 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F461240EEC0200C2E768 /* RegisterViewController.swift */; };
 		DFBBF9DEE79CB773F8570047 /* Pods_ConstantTechnologies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B18A2B4672F349F267C1239 /* Pods_ConstantTechnologies.framework */; };
+		E2E16A3C240FC26A00877B51 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A3B240FC26A00877B51 /* RadioButton.swift */; };
+		E2E16A3E240FCB3000877B51 /* RadioButtonsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A3D240FCB3000877B51 /* RadioButtonsContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		D405F45F240EE02300C2E768 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D405F461240EEC0200C2E768 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DA359025E20E3BF927B8F1A8 /* Pods-ConstantTechnologiesViewModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstantTechnologiesViewModels.debug.xcconfig"; path = "Target Support Files/Pods-ConstantTechnologiesViewModels/Pods-ConstantTechnologiesViewModels.debug.xcconfig"; sourceTree = "<group>"; };
+		E2E16A3B240FC26A00877B51 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		E2E16A3D240FCB3000877B51 /* RadioButtonsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonsContainer.swift; sourceTree = "<group>"; };
 		E6FAF5119D9C60D1E1ABFA53 /* Pods_ConstantTechnologiesViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConstantTechnologiesViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5D1FFA0E094AD40078CFDB /* Pods-ConstantTechnologiesViewModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstantTechnologiesViewModels.release.xcconfig"; path = "Target Support Files/Pods-ConstantTechnologiesViewModels/Pods-ConstantTechnologiesViewModels.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,6 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				D405F44C240ECA2A00C2E768 /* CommandableButton.swift */,
+				E2E16A3B240FC26A00877B51 /* RadioButton.swift */,
+				E2E16A3D240FCB3000877B51 /* RadioButtonsContainer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -580,7 +586,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D405F460240EE02300C2E768 /* UIView+Extension.swift in Sources */,
+				E2E16A3C240FC26A00877B51 /* RadioButton.swift in Sources */,
 				D405F402240EB29700C2E768 /* AppDelegate.swift in Sources */,
+				E2E16A3E240FCB3000877B51 /* RadioButtonsContainer.swift in Sources */,
 				D405F437240EB96600C2E768 /* main.swift in Sources */,
 				D405F462240EEC0200C2E768 /* RegisterViewController.swift in Sources */,
 				D405F44D240ECA2A00C2E768 /* CommandableButton.swift in Sources */,
