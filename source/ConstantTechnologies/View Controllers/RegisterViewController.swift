@@ -25,8 +25,30 @@ final class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var cjNumberTextField: UITextField!
     @IBOutlet weak var passportOrIdTextField: UITextField!
+    @IBOutlet private var indicatorView: [UIView]!
+    @IBOutlet weak var leftIndicatorWidth: NSLayoutConstraint!
+    @IBOutlet weak var righthIndIndicatorWidth: NSLayoutConstraint!
+    
     private var viewModel: IRegisterViewModel!
     
+    private var isOn = true {
+        didSet{
+            if isOn == true {
+                UIView.animate(withDuration: 0.5) {
+                    self.leftIndicatorWidth.constant = 10
+                    self.righthIndIndicatorWidth.constant = 22
+                    self.indicatorView[1].backgroundColor = UIColor(named: "Orange")
+                    self.indicatorView[0].backgroundColor = UIColor(named: "light Orange")}
+            } else {
+                UIView.animate(withDuration: 0.5) {
+                    self.leftIndicatorWidth.constant = 22
+                    self.righthIndIndicatorWidth.constant = 10
+                    self.indicatorView[1].backgroundColor = UIColor(named: "light Orange")
+                    self.indicatorView[0].backgroundColor = UIColor(named: "Orange")
+                }
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,11 +77,11 @@ final class RegisterViewController: UIViewController {
     
     
     private func showPassportInfoView(_ show: Bool) {
+        self.isOn = show
         self.passportInfoView.isHidden = !show
         self.profileInfoView.isHidden = show
         self.navigationItem.leftBarButtonItem = (show ? self.backBarButton : nil)
     }
-    
     
     // MARK: - IBAction Methods -
     
