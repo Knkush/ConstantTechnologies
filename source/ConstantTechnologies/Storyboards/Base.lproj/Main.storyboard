@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIB-aM-m0U">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIB-aM-m0U">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,17 +14,17 @@
         <!--Register-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="RegisterViewController" id="BYZ-38-t0r" customClass="RegisterViewController" customModule="ConstantTechnologies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="BYZ-38-t0r" customClass="RegisterViewController" customModule="CTechnologies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfO-HK-Woe" userLabel="Indicator View" customClass="IndicatorView" customModule="ConstantTechnologies" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfO-HK-Woe" userLabel="Indicator View" customClass="IndicatorView" customModule="CTechnologies" customModuleProvider="target">
                                 <rect key="frame" x="185" y="10" width="44" height="20"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmW-Ed-Xem" userLabel="Left Indicator View">
                                         <rect key="frame" x="0.0" y="5" width="22" height="10"/>
-                                        <color key="backgroundColor" name="Orange"/>
+                                        <color key="backgroundColor" name="orange"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="22" id="KTC-8X-Dw6"/>
                                             <constraint firstAttribute="height" constant="10" id="W8d-pU-bXt"/>
@@ -35,7 +37,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWT-Kw-o46" userLabel="Righth Indicator View">
                                         <rect key="frame" x="34" y="5" width="10" height="10"/>
-                                        <color key="backgroundColor" red="0.98431372549019602" green="0.87450980392156863" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="lightOrange"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="10" id="DLV-2N-0ty"/>
                                             <constraint firstAttribute="width" constant="10" id="jFS-SU-gtK"/>
@@ -76,9 +78,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoH-wO-3V7" userLabel="Choose Image Button" customClass="CommandableButton" customModule="ConstantTechnologies" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoH-wO-3V7" userLabel="Choose Image Button" customClass="CommandableButton" customModule="CTechnologies" customModuleProvider="target">
                                 <rect key="frame" x="232" y="144" width="50" height="50"/>
-                                <color key="backgroundColor" name="Orange"/>
+                                <color key="backgroundColor" name="orange"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="c9L-nV-Qg8"/>
                                     <constraint firstAttribute="width" constant="50" id="ymO-f0-tgX"/>
@@ -92,7 +94,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1r-vb-g2D" userLabel="Passport info View">
-                                <rect key="frame" x="0.0" y="238" width="414" height="454"/>
+                                <rect key="frame" x="0.0" y="238" width="414" height="434"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Yi-x7-rZT">
                                         <rect key="frame" x="40" y="10" width="334" height="195"/>
@@ -129,13 +131,13 @@
                                                     <constraint firstItem="XBb-8o-Mml" firstAttribute="trailing" secondItem="njM-vB-RNi" secondAttribute="trailing" id="wMu-hc-ord"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsy-n7-xQf" customClass="RadioButtonsContainer" customModule="ConstantTechnologies" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsy-n7-xQf" customClass="RadioButtonsContainer" customModule="CTechnologies" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="70" width="334" height="55"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="D8P-MV-Ju4">
                                                         <rect key="frame" x="0.0" y="12.666666666666686" width="334" height="30"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="gEL-K8-hHS" customClass="RadioButton" customModule="ConstantTechnologies" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="gEL-K8-hHS" customClass="RadioButton" customModule="CTechnologies" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgRadioButtonOn" translatesAutoresizingMaskIntoConstraints="NO" id="fmb-P6-Azf">
@@ -166,7 +168,7 @@
                                                                     <outlet property="textLabel" destination="hSA-iQ-3ii" id="bht-F7-jce"/>
                                                                 </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYy-sD-ly7" customClass="RadioButton" customModule="ConstantTechnologies" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYy-sD-ly7" customClass="RadioButton" customModule="CTechnologies" customModuleProvider="target">
                                                                 <rect key="frame" x="157" y="0.0" width="177" height="30"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgRadioButtonOn" translatesAutoresizingMaskIntoConstraints="NO" id="1SA-iY-wvL">
@@ -239,8 +241,8 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hf-yp-ukp" customClass="CommandableButton" customModule="ConstantTechnologies" customModuleProvider="target">
-                                        <rect key="frame" x="157" y="370" width="100" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hf-yp-ukp" customClass="CommandableButton" customModule="CTechnologies" customModuleProvider="target">
+                                        <rect key="frame" x="157" y="350" width="100" height="40"/>
                                         <color key="backgroundColor" name="Orange"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="7Pv-QS-hmA"/>
@@ -267,7 +269,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-np-yXp" userLabel="Profile Info View">
-                                <rect key="frame" x="0.0" y="238" width="414" height="454"/>
+                                <rect key="frame" x="0.0" y="238" width="414" height="434"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9uO-dC-oKP">
                                         <rect key="frame" x="40" y="10" width="334" height="195"/>
@@ -373,9 +375,9 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWh-o3-kgi" customClass="CommandableButton" customModule="ConstantTechnologies" customModuleProvider="target">
-                                        <rect key="frame" x="157" y="370" width="100" height="40"/>
-                                        <color key="backgroundColor" name="Orange"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWh-o3-kgi" customClass="CommandableButton" customModule="CTechnologies" customModuleProvider="target">
+                                        <rect key="frame" x="157" y="350" width="100" height="40"/>
+                                        <color key="backgroundColor" name="orange"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="CG5-c6-u87"/>
                                             <constraint firstAttribute="height" constant="40" id="uxm-iz-5xl"/>
@@ -403,8 +405,8 @@
                                     <constraint firstItem="VWh-o3-kgi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9uO-dC-oKP" secondAttribute="bottom" constant="10" id="rId-OY-UgJ"/>
                                 </constraints>
                             </view>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wpv-PU-cNh" customClass="BindableActivityIndicator" customModule="ConstantTechnologies" customModuleProvider="target">
-                                <rect key="frame" x="188.66666666666666" y="327.66666666666669" width="37" height="37"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wpv-PU-cNh" customClass="BindableActivityIndicator" customModule="CTechnologies" customModuleProvider="target">
+                                <rect key="frame" x="188.66666666666666" y="317.66666666666669" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -463,7 +465,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dIB-aM-m0U" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="mZc-0N-uCs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="purple"/>
                         <textAttributes key="titleTextAttributes">
@@ -490,6 +492,12 @@
         </namedColor>
         <namedColor name="Purple">
             <color red="0.27058823529411763" green="0.20784313725490197" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightOrange">
+            <color red="0.98431372549019602" green="0.87450980392156863" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="0.95294117647058818" green="0.58431372549019611" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="purple">
             <color red="0.27058823529411763" green="0.20784313725490197" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
