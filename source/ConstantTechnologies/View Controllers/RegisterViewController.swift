@@ -33,20 +33,7 @@ final class RegisterViewController: UIViewController {
     
     private var isOn = true {
         didSet{
-            if isOn == true {
-                UIView.animate(withDuration: 0.5) {
-                    self.leftIndicatorWidth.constant = 10
-                    self.righthIndIndicatorWidth.constant = 22
-                    self.indicatorView[1].backgroundColor = UIColor(named: "Orange")
-                    self.indicatorView[0].backgroundColor = UIColor(named: "light Orange")}
-            } else {
-                UIView.animate(withDuration: 0.5) {
-                    self.leftIndicatorWidth.constant = 22
-                    self.righthIndIndicatorWidth.constant = 10
-                    self.indicatorView[1].backgroundColor = UIColor(named: "light Orange")
-                    self.indicatorView[0].backgroundColor = UIColor(named: "Orange")
-                }
-            }
+           self.animateIndicatorView()
         }
     }
     
@@ -81,6 +68,23 @@ final class RegisterViewController: UIViewController {
         self.passportInfoView.isHidden = !show
         self.profileInfoView.isHidden = show
         self.navigationItem.leftBarButtonItem = (show ? self.backBarButton : nil)
+    }
+    
+    private func animateIndicatorView() {
+        if self.isOn == true {
+            UIView.animate(withDuration: 0.5) {
+                self.leftIndicatorWidth.constant = 10
+                self.righthIndIndicatorWidth.constant = 22
+                self.indicatorView[1].backgroundColor = UIColor(named: "Orange")
+                self.indicatorView[0].backgroundColor = UIColor(named: "light Orange")}
+        } else {
+            UIView.animate(withDuration: 0.5) {
+                self.leftIndicatorWidth.constant = 22
+                self.righthIndIndicatorWidth.constant = 10
+                self.indicatorView[1].backgroundColor = UIColor(named: "light Orange")
+                self.indicatorView[0].backgroundColor = UIColor(named: "Orange")
+            }
+        }
     }
     
     // MARK: - IBAction Methods -
