@@ -11,6 +11,7 @@ import ConstantTechnologiesViewModels
 import ConstantTechnologiesCore
 
 final class RegisterViewController: UIViewController {
+    @IBOutlet private weak var backBarButton: UIBarButtonItem!
     @IBOutlet private weak var profileImageView: UIImageView!
     @IBOutlet private weak var profileInfoView: UIView!
     @IBOutlet private weak var passportInfoView: UIView!
@@ -23,7 +24,7 @@ final class RegisterViewController: UIViewController {
     @IBOutlet weak var cjNumberTextField: UITextField!
     @IBOutlet weak var passportOrIdTextField: UITextField!
     private var viewModel: IRegisterViewModel!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +33,8 @@ final class RegisterViewController: UIViewController {
     }
     
     private func setupViewModel() {
-          self.viewModel = ServiceLocator.instance.resolve(IRegisterViewModel.self)
-          
+        self.viewModel = ServiceLocator.instance.resolve(IRegisterViewModel.self)
+        
         self.viewModel.setupCommand.execute()
         
         self.viewModel.fullName.bidirectionalBind(to: self.fullNameTextField.reactive.text).dispose(in: self.bag)
@@ -43,14 +44,15 @@ final class RegisterViewController: UIViewController {
         self.viewModel.cjNumber.bidirectionalBind(to: self.cjNumberTextField.reactive.text).dispose(in: self.bag)
         self.viewModel.isPassport.bidirectionalBind(to: self.radioButtonsContainer.isPassportActive).dispose(in: self.bag)
         self.viewModel.passportOrIdNumber.bidirectionalBind(to: self.passportOrIdTextField.reactive.text).dispose(in: self.bag)
-
+        
         self.submitButton.command = self.viewModel.submitCommand
-      }
+    }
     
     
     private func showPassportInfoView(_ show: Bool) {
         self.passportInfoView.isHidden = !show
         self.profileInfoView.isHidden = show
+        self.navigationItem.leftBarButtonItem = (show ? self.backBarButton : nil)
     }
     
     // MARK: - IBAction Methods -
@@ -76,6 +78,10 @@ final class RegisterViewController: UIViewController {
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func backBarButtonTapped(_ sender: UIBarButtonItem) {
+        self.showPassportInfoView(false)
     }
     
     @IBAction private func nextButtonTapped() {

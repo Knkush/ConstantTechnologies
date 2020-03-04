@@ -226,20 +226,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-np-yXp" userLabel="Profile Info View">
                                 <rect key="frame" x="0.0" y="238" width="320" height="286"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9uO-dC-oKP">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9uO-dC-oKP">
                                         <rect key="frame" x="40" y="10" width="240" height="182"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z9z-xv-6bo">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9z-xv-6bo">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="50.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Full name*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4f-2E-54c">
-                                                        <rect key="frame" x="0.0" y="-5" width="240" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4f-2E-54c">
+                                                        <rect key="frame" x="0.0" y="-9.5" width="240" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-20-fr8">
-                                                        <rect key="frame" x="0.0" y="15" width="240" height="40"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-20-fr8">
+                                                        <rect key="frame" x="0.0" y="10.5" width="240" height="40"/>
                                                         <color key="tintColor" name="Purple"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="1Ls-L9-g6H"/>
@@ -262,17 +262,17 @@
                                                     <constraint firstItem="UKv-20-fr8" firstAttribute="top" secondItem="d4f-2E-54c" secondAttribute="bottom" constant="3" id="uvg-cQ-T9U"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ZC-if-HPk">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZC-if-HPk">
                                                 <rect key="frame" x="0.0" y="65.5" width="240" height="51"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Phone number*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ3-7a-15P">
-                                                        <rect key="frame" x="0.0" y="-5" width="240" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ3-7a-15P">
+                                                        <rect key="frame" x="0.0" y="-9" width="240" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lc4-ON-ApE">
-                                                        <rect key="frame" x="0.0" y="15" width="240" height="40"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lc4-ON-ApE">
+                                                        <rect key="frame" x="0.0" y="11" width="240" height="40"/>
                                                         <color key="tintColor" name="Purple"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="XM3-dY-Y9s"/>
@@ -295,17 +295,17 @@
                                                     <constraint firstItem="GJ3-7a-15P" firstAttribute="trailing" secondItem="Lc4-ON-ApE" secondAttribute="trailing" id="vim-Ko-pC7"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uu-9J-1h9">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uu-9J-1h9">
                                                 <rect key="frame" x="0.0" y="131.5" width="240" height="50.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiF-dR-YQR">
-                                                        <rect key="frame" x="0.0" y="-5" width="240" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiF-dR-YQR">
+                                                        <rect key="frame" x="0.0" y="-9.5" width="240" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8R2-zU-uxM">
-                                                        <rect key="frame" x="0.0" y="15" width="240" height="40"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8R2-zU-uxM">
+                                                        <rect key="frame" x="0.0" y="10.5" width="240" height="40"/>
                                                         <color key="tintColor" name="Purple"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="3Ir-Rq-NXc"/>
@@ -380,6 +380,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="0bd-gl-Zs7"/>
                     <connections>
+                        <outlet property="backBarButton" destination="yso-WG-ujM" id="PRL-7C-C2P"/>
                         <outlet property="cjNumberTextField" destination="njM-vB-RNi" id="jMP-YZ-Tf5"/>
                         <outlet property="emailTextField" destination="8R2-zU-uxM" id="WEq-Ch-RbH"/>
                         <outlet property="fullNameTextField" destination="UKv-20-fr8" id="9PJ-2M-DDl"/>
@@ -394,6 +395,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <barButtonItem image="imgBackBarButton" id="yso-WG-ujM">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="backBarButtonTapped:" destination="BYZ-38-t0r" id="3hP-Qv-Xp4"/>
+                    </connections>
+                </barButtonItem>
             </objects>
             <point key="canvasLocation" x="1111.2" y="756.07196401799104"/>
         </scene>
@@ -421,6 +428,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="imgBackBarButton" width="25" height="25"/>
         <image name="imgCamera" width="128" height="128"/>
         <image name="imgRadioButtonOn" width="128" height="128"/>
         <image name="imgbb" width="256" height="256"/>
