@@ -10,6 +10,13 @@ import UIKit
 import ConstantTechnologiesViewModels
 
 class CommandableButton: UIButton {
+    var enabledColor: UIColor? = UIColor.clear
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.enabledColor = self.backgroundColor
+    }
     
     var command: ICommand? {
         didSet {

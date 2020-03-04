@@ -9,5 +9,6 @@
 import Promises
 
 public protocol IDialogService {
-    func displayConfirmation(_ title: String, _ message: String, _ confirmButton: String, _ cancelButton: String) -> Promise<Bool>
+    func displayAlert(title: String?, message: String?, cancelButton: String?)
+    func displayActionSheet(title: String, message: String?, cancelButton: String?, alternativeButtons: String?...) -> Promise<Int?>
 }

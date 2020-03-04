@@ -29,7 +29,6 @@
 		D405F447240EC8F700C2E768 /* ICommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F446240EC8F700C2E768 /* ICommand.swift */; };
 		D405F449240EC90E00C2E768 /* IAsyncCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F448240EC90E00C2E768 /* IAsyncCommand.swift */; };
 		D405F44D240ECA2A00C2E768 /* CommandableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F44C240ECA2A00C2E768 /* CommandableButton.swift */; };
-		D405F453240ECD3500C2E768 /* DialogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F452240ECD3500C2E768 /* DialogService.swift */; };
 		D405F455240ECD4B00C2E768 /* IDialogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F454240ECD4B00C2E768 /* IDialogService.swift */; };
 		D405F45B240ED2A600C2E768 /* IRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F45A240ED2A600C2E768 /* IRegisterViewModel.swift */; };
 		D405F45D240ED2C600C2E768 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F45C240ED2C600C2E768 /* RegisterViewModel.swift */; };
@@ -38,6 +37,13 @@
 		DFBBF9DEE79CB773F8570047 /* Pods_ConstantTechnologies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B18A2B4672F349F267C1239 /* Pods_ConstantTechnologies.framework */; };
 		E2E16A3C240FC26A00877B51 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A3B240FC26A00877B51 /* RadioButton.swift */; };
 		E2E16A3E240FCB3000877B51 /* RadioButtonsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A3D240FCB3000877B51 /* RadioButtonsContainer.swift */; };
+		E2E16A40240FE41800877B51 /* DialogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F452240ECD3500C2E768 /* DialogService.swift */; };
+		E2E16A42240FE7CE00877B51 /* RegisterViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A41240FE7CE00877B51 /* RegisterViewController+Keyboard.swift */; };
+		E2E16A44240FEC2D00877B51 /* SetupRegisterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A43240FEC2D00877B51 /* SetupRegisterCommand.swift */; };
+		E2E16A47240FEF0500877B51 /* Optional+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A46240FEF0500877B51 /* Optional+Empty.swift */; };
+		E2E16A49240FF09D00877B51 /* SubmitCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A48240FF09D00877B51 /* SubmitCommand.swift */; };
+		E2E16A4E240FF60D00877B51 /* UserItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A4C240FF26200877B51 /* UserItemViewModel.swift */; };
+		E2E16A502410019D00877B51 /* CommandableButton+Enabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A4F2410019D00877B51 /* CommandableButton+Enabled.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +116,12 @@
 		DA359025E20E3BF927B8F1A8 /* Pods-ConstantTechnologiesViewModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstantTechnologiesViewModels.debug.xcconfig"; path = "Target Support Files/Pods-ConstantTechnologiesViewModels/Pods-ConstantTechnologiesViewModels.debug.xcconfig"; sourceTree = "<group>"; };
 		E2E16A3B240FC26A00877B51 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		E2E16A3D240FCB3000877B51 /* RadioButtonsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonsContainer.swift; sourceTree = "<group>"; };
+		E2E16A41240FE7CE00877B51 /* RegisterViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		E2E16A43240FEC2D00877B51 /* SetupRegisterCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupRegisterCommand.swift; sourceTree = "<group>"; };
+		E2E16A46240FEF0500877B51 /* Optional+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Empty.swift"; sourceTree = "<group>"; };
+		E2E16A48240FF09D00877B51 /* SubmitCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitCommand.swift; sourceTree = "<group>"; };
+		E2E16A4C240FF26200877B51 /* UserItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemViewModel.swift; sourceTree = "<group>"; };
+		E2E16A4F2410019D00877B51 /* CommandableButton+Enabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandableButton+Enabled.swift"; sourceTree = "<group>"; };
 		E6FAF5119D9C60D1E1ABFA53 /* Pods_ConstantTechnologiesViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConstantTechnologiesViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5D1FFA0E094AD40078CFDB /* Pods-ConstantTechnologiesViewModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstantTechnologiesViewModels.release.xcconfig"; path = "Target Support Files/Pods-ConstantTechnologiesViewModels/Pods-ConstantTechnologiesViewModels.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +204,7 @@
 		D405F400240EB29700C2E768 /* ConstantTechnologies */ = {
 			isa = PBXGroup;
 			children = (
+				E2E16A3F240FE40500877B51 /* Services */,
 				D405F44F240ECAE300C2E768 /* View Controllers */,
 				D405F44A240EC9B900C2E768 /* Helpers */,
 				D405F45E240EDFE100C2E768 /* Extensions */,
@@ -219,6 +232,7 @@
 		D405F42B240EB5D800C2E768 /* ConstantTechnologiesViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E2E16A45240FEEEE00877B51 /* Extensions */,
 				D405F440240EC8A000C2E768 /* Base */,
 				D405F456240ED24000C2E768 /* Register */,
 				D405F42C240EB5D800C2E768 /* ConstantTechnologiesViewModels.h */,
@@ -279,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				D405F461240EEC0200C2E768 /* RegisterViewController.swift */,
+				E2E16A41240FE7CE00877B51 /* RegisterViewController+Keyboard.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -286,7 +301,6 @@
 		D405F450240ECBF600C2E768 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D405F451240ECCF400C2E768 /* Implementation */,
 				D405F454240ECD4B00C2E768 /* IDialogService.swift */,
 			);
 			path = Services;
@@ -313,6 +327,9 @@
 			isa = PBXGroup;
 			children = (
 				D405F45C240ED2C600C2E768 /* RegisterViewModel.swift */,
+				E2E16A43240FEC2D00877B51 /* SetupRegisterCommand.swift */,
+				E2E16A48240FF09D00877B51 /* SubmitCommand.swift */,
+				E2E16A4C240FF26200877B51 /* UserItemViewModel.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -321,6 +338,23 @@
 			isa = PBXGroup;
 			children = (
 				D405F45F240EE02300C2E768 /* UIView+Extension.swift */,
+				E2E16A4F2410019D00877B51 /* CommandableButton+Enabled.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2E16A3F240FE40500877B51 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D405F451240ECCF400C2E768 /* Implementation */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E2E16A45240FEEEE00877B51 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2E16A46240FEF0500877B51 /* Optional+Empty.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -587,11 +621,14 @@
 			files = (
 				D405F460240EE02300C2E768 /* UIView+Extension.swift in Sources */,
 				E2E16A3C240FC26A00877B51 /* RadioButton.swift in Sources */,
+				E2E16A502410019D00877B51 /* CommandableButton+Enabled.swift in Sources */,
+				E2E16A40240FE41800877B51 /* DialogService.swift in Sources */,
 				D405F402240EB29700C2E768 /* AppDelegate.swift in Sources */,
 				E2E16A3E240FCB3000877B51 /* RadioButtonsContainer.swift in Sources */,
 				D405F437240EB96600C2E768 /* main.swift in Sources */,
 				D405F462240EEC0200C2E768 /* RegisterViewController.swift in Sources */,
 				D405F44D240ECA2A00C2E768 /* CommandableButton.swift in Sources */,
+				E2E16A42240FE7CE00877B51 /* RegisterViewController+Keyboard.swift in Sources */,
 				D405F439240EB97000C2E768 /* Startup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,7 +640,6 @@
 				D405F43F240EBA6A00C2E768 /* ServiceLocator.swift in Sources */,
 				D405F455240ECD4B00C2E768 /* IDialogService.swift in Sources */,
 				D405F43B240EB97C00C2E768 /* Startup.swift in Sources */,
-				D405F453240ECD3500C2E768 /* DialogService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,11 +649,15 @@
 			files = (
 				D405F443240EC8D900C2E768 /* AsyncCommand.swift in Sources */,
 				D405F447240EC8F700C2E768 /* ICommand.swift in Sources */,
+				E2E16A44240FEC2D00877B51 /* SetupRegisterCommand.swift in Sources */,
 				D405F45D240ED2C600C2E768 /* RegisterViewModel.swift in Sources */,
 				D405F449240EC90E00C2E768 /* IAsyncCommand.swift in Sources */,
+				E2E16A49240FF09D00877B51 /* SubmitCommand.swift in Sources */,
 				D405F43D240EB98600C2E768 /* Startup.swift in Sources */,
 				D405F445240EC8E700C2E768 /* Command.swift in Sources */,
+				E2E16A47240FEF0500877B51 /* Optional+Empty.swift in Sources */,
 				D405F45B240ED2A600C2E768 /* IRegisterViewModel.swift in Sources */,
+				E2E16A4E240FF60D00877B51 /* UserItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

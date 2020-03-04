@@ -14,6 +14,9 @@ extension Container {
     
     @discardableResult
     func register() -> Container {
+        // MARK: - Services -
+        self.autoregister(IDialogService.self, initializer: DialogService.init)
+        
         return self
     }
 }

@@ -7,20 +7,44 @@
 //
 
 import UIKit
+import ConstantTechnologiesViewModels
+import ConstantTechnologiesCore
 
-class RegisterViewController: UIViewController {
-    @IBOutlet weak var profileImageView: UIImageView!
+final class RegisterViewController: UIViewController {
+    @IBOutlet private weak var profileImageView: UIImageView!
+    @IBOutlet private weak var profileInfoView: UIView!
+    @IBOutlet private weak var passportInfoView: UIView!
     @IBOutlet private weak var radioButtonsContainer: RadioButtonsContainer!
-    
-    private var isSelected = true
-    
+    @IBOutlet private weak var nextButton: CommandableButton!
+    @IBOutlet weak var submitButton: CommandableButton!
+    @IBOutlet weak var fullNameTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var cjNumberTextField: UITextField!
+    @IBOutlet weak var passportOrIdTextField: UITextField!
+    private var viewModel: IRegisterViewModel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.radioButtonsContainer.isPassportActive.distinctUntilChanged().observeNext { (isActive) in
-            print("passport active is \(isActive)")
-        }.dispose(in: self.bag)
+        self.bindGestureRecognizers()
+        self.setupViewModel()
     }
+    
+    private func setupViewModel() {
+          self.viewModel = ServiceLocator.instance.resolve(IRegisterViewModel.self)
+          
+        self.viewModel.setupCommand.execute()
+        
+        self.viewModel.fullName.bidirectionalBind(to: self.fullNameTextField.reactive.text).dispose(in: self.bag)
+        self.viewModel.phoneNumber.bidirectionalBind(to: self.phoneNumberTextField.reactive.text).dispose(in: self.bag)
+        self.viewModel.email.bidirectionalBind(to: self.emailTextField.reactive.text).dispose(in: self.bag)
+        self.viewModel.isPassportInfoAllowable.bind(to: self.nextButton.reactive.isEnabled).dispose(in: self.bag)
+        self.viewModel.cjNumber.bidirectionalBind(to: self.cjNumberTextField.reactive.text).dispose(in: self.bag)
+        self.viewModel.isPassport.bidirectionalBind(to: self.radioButtonsContainer.isPassportActive).dispose(in: self.bag)
+                  
+        self.submitButton.command = self.viewModel.submitCommand
+      }
     
     
     // MARK: - IBAction Methods -
@@ -48,7 +72,18 @@ class RegisterViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func nextButtonTapped() {
+        self.passportInfoView.isHidden = false
+        self.profileInfoView.isHidden = true
+    }
+    
+    @IBAction func submitButtonTapped() {
+        DialogService().displayAlert(title: "Success!",
+                                     message: "Person Has Sign Up.",
+                                     cancelButton: "Ok")
+    }
 }
+
 
 // MARK : -  UIImagePickerControllerDelegate, UINavigationControllerDelegate -
 

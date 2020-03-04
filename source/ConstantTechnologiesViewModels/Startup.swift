@@ -12,6 +12,10 @@ import ConstantTechnologiesCore
 
 public extension Container {
     func registerViewModels() -> Container {
+        // MARK: - ViewModels -
+        
+        self.autoregister(IRegisterViewModel.self, initializer: RegisterViewModel.init)
+        
         return self
     }
 }
