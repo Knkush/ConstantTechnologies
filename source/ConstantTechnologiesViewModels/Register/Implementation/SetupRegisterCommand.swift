@@ -20,7 +20,9 @@ internal class SetupRegisterCommand: Command {
         let isPassportInfoAllowable = combineLatest(self.viewModel.fullName,
                                                     self.viewModel.phoneNumber) { fullName, phoneNumber in
                                                         return !fullName.isNilOrEmpty() &&
-                                                            !phoneNumber.isNilOrEmpty()
+                                                            !phoneNumber.isNilOrEmpty() &&
+                                                            fullName!.count >= 4 &&
+                                                            phoneNumber!.count >= 6
         }
         
         isPassportInfoAllowable.bind(to: self.viewModel.isPassportInfoAllowable).dispose(in: self.bag)

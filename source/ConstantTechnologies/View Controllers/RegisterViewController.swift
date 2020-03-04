@@ -42,10 +42,16 @@ final class RegisterViewController: UIViewController {
         self.viewModel.isPassportInfoAllowable.bind(to: self.nextButton.reactive.isEnabled).dispose(in: self.bag)
         self.viewModel.cjNumber.bidirectionalBind(to: self.cjNumberTextField.reactive.text).dispose(in: self.bag)
         self.viewModel.isPassport.bidirectionalBind(to: self.radioButtonsContainer.isPassportActive).dispose(in: self.bag)
-                  
+        self.viewModel.passportOrIdNumber.bidirectionalBind(to: self.passportOrIdTextField.reactive.text).dispose(in: self.bag)
+
         self.submitButton.command = self.viewModel.submitCommand
       }
     
+    
+    private func showPassportInfoView(_ show: Bool) {
+        self.passportInfoView.isHidden = !show
+        self.profileInfoView.isHidden = show
+    }
     
     // MARK: - IBAction Methods -
     
@@ -72,15 +78,8 @@ final class RegisterViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func nextButtonTapped() {
-        self.passportInfoView.isHidden = false
-        self.profileInfoView.isHidden = true
-    }
-    
-    @IBAction func submitButtonTapped() {
-        DialogService().displayAlert(title: "Success!",
-                                     message: "Person Has Sign Up.",
-                                     cancelButton: "Ok")
+    @IBAction private func nextButtonTapped() {
+        self.showPassportInfoView(true)
     }
 }
 
