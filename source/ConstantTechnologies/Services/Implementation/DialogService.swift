@@ -12,7 +12,7 @@ import Promises
 
 class DialogService: IDialogService {
     
-      func displayAlert(title: String?, message: String?, cancelButton: String?) {
+    func displayAlert(title: String?, message: String?, cancelButton: String?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         if let cancelButton = cancelButton {

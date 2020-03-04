@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgbb" translatesAutoresizingMaskIntoConstraints="NO" id="Ch2-Rw-nqu">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgAvatarDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Ch2-Rw-nqu">
                                 <rect key="frame" x="132" y="44" width="150" height="150"/>
                                 <color key="tintColor" name="Purple"/>
                                 <constraints>
@@ -426,10 +426,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="imgAvatarDefault" width="256" height="256"/>
         <image name="imgBackBarButton" width="25" height="25"/>
         <image name="imgCamera" width="128" height="128"/>
         <image name="imgRadioButtonOn" width="128" height="128"/>
-        <image name="imgbb" width="256" height="256"/>
         <namedColor name="Orange">
             <color red="0.95294117647058818" green="0.58431372549019611" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

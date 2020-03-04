@@ -12,18 +12,18 @@ import UIKit
 
 class PhotoCatchService: NSObject, IPhotoCatchService {
     private var catchPhotoTask: Promise<Data?>!
-
+    
     func isSourceTypeAvailable(isSourceTypeCamera: Bool) -> Bool {
         let sourceType: UIImagePickerController.SourceType = (isSourceTypeCamera ? .camera : .photoLibrary)
         
         return UIImagePickerController.isSourceTypeAvailable(sourceType)
     }
     
-
+    
     
     func catchPhoto(fromCamera: Bool) -> Promise<Data?> {
         self.catchPhotoTask = Promise<Data?>.pending()
-
+        
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         imagePickerController.sourceType = (fromCamera ? .camera : .photoLibrary)
