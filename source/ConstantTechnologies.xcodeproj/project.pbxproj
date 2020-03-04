@@ -95,7 +95,7 @@
 		A67F022425752881AB0DEE02 /* Pods-ConstantTechnologies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstantTechnologies.debug.xcconfig"; path = "Target Support Files/Pods-ConstantTechnologies/Pods-ConstantTechnologies.debug.xcconfig"; sourceTree = "<group>"; };
 		AD912106E6D0571B834744DD /* Pods-ConstantTechnologies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstantTechnologies.release.xcconfig"; path = "Target Support Files/Pods-ConstantTechnologies/Pods-ConstantTechnologies.release.xcconfig"; sourceTree = "<group>"; };
 		B07A0DC307D747980AF627E6 /* Pods-ConstantTechnologiesCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstantTechnologiesCore.debug.xcconfig"; path = "Target Support Files/Pods-ConstantTechnologiesCore/Pods-ConstantTechnologiesCore.debug.xcconfig"; sourceTree = "<group>"; };
-		D405F3FE240EB29700C2E768 /* ConstantTechnologies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstantTechnologies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D405F3FE240EB29700C2E768 /* CTechnologies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTechnologies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D405F401240EB29700C2E768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D405F406240EB29700C2E768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D405F408240EB29900C2E768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 		D405F3FF240EB29700C2E768 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D405F3FE240EB29700C2E768 /* ConstantTechnologies.app */,
+				D405F3FE240EB29700C2E768 /* CTechnologies.app */,
 				D405F418240EB5C000C2E768 /* ConstantTechnologiesCore.framework */,
 				D405F42A240EB5D800C2E768 /* ConstantTechnologiesViewModels.framework */,
 			);
@@ -454,7 +454,7 @@
 			);
 			name = ConstantTechnologies;
 			productName = ConstantTechnologies;
-			productReference = D405F3FE240EB29700C2E768 /* ConstantTechnologies.app */;
+			productReference = D405F3FE240EB29700C2E768 /* CTechnologies.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D405F417240EB5C000C2E768 /* ConstantTechnologiesCore */ = {
@@ -890,7 +890,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = QM.ConstantTechnologies;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CTechnologies;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -910,7 +910,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = QM.ConstantTechnologies;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CTechnologies;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
