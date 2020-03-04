@@ -22,6 +22,29 @@ class DialogService: IDialogService {
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
+    func displayConfirmationAlert(title: String?, message: String?, cancelButton: String?, okButton: String?) -> Promise<Bool> {
+        let promise = Promise<Bool> { fulfill, reject in
+            
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            
+            if let cancelButton = cancelButton {
+                alertController.addAction(UIAlertAction(title: cancelButton, style: .cancel, handler: { (_) in
+                    fulfill(false)
+                }))
+            }
+            
+            if let okButton = okButton {
+                alertController.addAction(UIAlertAction(title: okButton, style: .default, handler: { (_) in
+                    fulfill(true)
+                }))
+            }
+            
+            UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+        }
+        
+        return promise
+    }
+    
     func displayActionSheet(title: String,
                             message: String? = nil,
                             cancelButton: String? = nil,

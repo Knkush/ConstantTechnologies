@@ -357,6 +357,9 @@
                                     <constraint firstItem="VWh-o3-kgi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9uO-dC-oKP" secondAttribute="bottom" constant="10" id="rId-OY-UgJ"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Wpv-PU-cNh" customClass="BindableActivityIndicator" customModule="ConstantTechnologies" customModuleProvider="target">
+                                <rect key="frame" x="197" y="336" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -370,13 +373,16 @@
                             <constraint firstItem="Ch2-Rw-nqu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bT4-L0-lWn"/>
                             <constraint firstItem="Ch2-Rw-nqu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="eau-lF-Gts"/>
                             <constraint firstItem="qoH-wO-3V7" firstAttribute="trailing" secondItem="Ch2-Rw-nqu" secondAttribute="trailing" constant="-10" id="gnd-Jp-J3A"/>
+                            <constraint firstItem="Wpv-PU-cNh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lJm-dE-lmd"/>
                             <constraint firstItem="F1r-vb-g2D" firstAttribute="trailing" secondItem="XXJ-np-yXp" secondAttribute="trailing" id="lYZ-3F-dOB"/>
                             <constraint firstItem="F1r-vb-g2D" firstAttribute="bottom" secondItem="XXJ-np-yXp" secondAttribute="bottom" id="vSK-8t-qDh"/>
+                            <constraint firstItem="Wpv-PU-cNh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z6y-3V-b38"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="0bd-gl-Zs7"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="Wpv-PU-cNh" id="OfF-qx-bst"/>
                         <outlet property="backBarButton" destination="yso-WG-ujM" id="PRL-7C-C2P"/>
                         <outlet property="catchPhotoButton" destination="qoH-wO-3V7" id="kMB-Cf-Fgl"/>
                         <outlet property="cjNumberTextField" destination="njM-vB-RNi" id="jMP-YZ-Tf5"/>

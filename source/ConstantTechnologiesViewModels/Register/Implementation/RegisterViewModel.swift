@@ -12,9 +12,11 @@ import ConstantTechnologiesCore
 internal class RegisterViewModel: IRegisterViewModel {
     private let dialogService: IDialogService
     private let photoCatchService: IPhotoCatchService
+    private let apiService: ICTApiService
     lazy var setupCommand: ICommand = SetupRegisterCommand(self)
     lazy var catchPhotoCommand: ICommand = CatchPhotoCommand(self, self.dialogService, self.photoCatchService)
     lazy var submitCommand: ICommand = SubmitCommand(self, self.dialogService)
+    lazy var getUsersCommand: IAsyncCommand = GetUsersCommand(self, self.apiService, self.dialogService)
     var image = Observable<Data?>(nil)
     let fullName = Observable<String?>(nil)
     let phoneNumber = Observable<String?>(nil)
@@ -26,8 +28,10 @@ internal class RegisterViewModel: IRegisterViewModel {
  
     
     init(_ photoCatchService: IPhotoCatchService,
-         _ dialogService: IDialogService) {
+         _ dialogService: IDialogService,
+         _ apiService: ICTApiService) {
         self.dialogService = dialogService
         self.photoCatchService = photoCatchService
+        self.apiService = apiService
     }
 }

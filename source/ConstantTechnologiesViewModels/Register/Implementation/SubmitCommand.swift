@@ -12,7 +12,7 @@ import ReactiveKit
 internal class SubmitCommand: Command {
     private weak var viewModel: RegisterViewModel!
     private let dialogService: IDialogService
-    
+
     
     init(_ viewModel: RegisterViewModel,
          _ dialogService: IDialogService) {
@@ -52,8 +52,14 @@ internal class SubmitCommand: Command {
                                         self.viewModel.isPassport.value,
                                         self.viewModel.passportOrIdNumber.value)
         
-        self.dialogService.displayAlert(title: "Success. User has signed up.",
-                                        message: newUser.description,
-                                        cancelButton: "Ok")
+        self.dialogService.displayConfirmationAlert(title: "Success. User has signed up.",
+                                                    message: newUser.description,
+                                                    cancelButton: "Ok",
+                                                    okButton: "Get some users")
+            .then { [weak self] (isConfirm)  in
+                guard isConfirm else { return }
+                
+                self?.viewModel.getUsersCommand.execute()
+        }
     }
 }

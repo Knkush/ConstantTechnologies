@@ -11,6 +11,9 @@ import SwinjectAutoregistration
 
 public extension Container {
     func registerCore() -> Container {
+        // MARK: - Services -
+        self.autoregister(ICTApiService.self, initializer: CTApiService.init)
+        
         return self
     }
 }

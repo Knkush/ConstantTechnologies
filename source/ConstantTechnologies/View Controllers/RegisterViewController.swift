@@ -12,6 +12,7 @@ import ConstantTechnologiesCore
 
 final class RegisterViewController: UIViewController {
     @IBOutlet private weak var backBarButton: UIBarButtonItem!
+    @IBOutlet private weak var activityIndicator: BindableActivityIndicator!
     @IBOutlet private weak var profileImageView: UIImageView!
     @IBOutlet private weak var profileInfoView: UIView!
     @IBOutlet private weak var passportInfoView: UIView!
@@ -46,6 +47,7 @@ final class RegisterViewController: UIViewController {
         self.viewModel.cjNumber.bidirectionalBind(to: self.cjNumberTextField.reactive.text).dispose(in: self.bag)
         self.viewModel.isPassport.bidirectionalBind(to: self.radioButtonsContainer.isPassportActive).dispose(in: self.bag)
         self.viewModel.passportOrIdNumber.bidirectionalBind(to: self.passportOrIdTextField.reactive.text).dispose(in: self.bag)
+        self.viewModel.getUsersCommand.isBusy.bind(to: self.activityIndicator.isOn).dispose(in: self.bag)
         
         self.catchPhotoButton.command = self.viewModel.catchPhotoCommand
         self.submitButton.command = self.viewModel.submitCommand
