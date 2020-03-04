@@ -2,7 +2,7 @@
 //  PhotoCatchService.swift
 //  ConstantTechnologiesCore
 //
-//  Created by Khachatur Hakobyan on 3/4/20.
+//  Created by Qnqush on 3/4/20.
 //  Copyright © 2020 Qnqush. All rights reserved.
 //
 
