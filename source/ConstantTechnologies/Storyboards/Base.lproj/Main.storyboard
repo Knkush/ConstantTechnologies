@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIB-aM-m0U">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIB-aM-m0U">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,10 +14,10 @@
             <objects>
                 <viewController storyboardIdentifier="RegisterViewController" id="BYZ-38-t0r" customClass="RegisterViewController" customModule="ConstantTechnologies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfO-HK-Woe" userLabel="Indicator View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfO-HK-Woe" userLabel="Indicator View" customClass="IndicatorView" customModule="ConstantTechnologies" customModuleProvider="target">
                                 <rect key="frame" x="185" y="10" width="44" height="20"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmW-Ed-Xem" userLabel="Left Indicator View">
@@ -58,6 +56,12 @@
                                     <constraint firstAttribute="width" constant="44" id="ftQ-HO-C3d"/>
                                     <constraint firstAttribute="trailing" secondItem="DWT-Kw-o46" secondAttribute="trailing" id="gfF-C0-vyS"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="leftIndicatorWidth" destination="KTC-8X-Dw6" id="78l-VS-4qj"/>
+                                    <outlet property="righthIndIndicatorWidth" destination="jFS-SU-gtK" id="Gib-vX-gLD"/>
+                                    <outletCollection property="indicators" destination="XmW-Ed-Xem" collectionClass="NSMutableArray" id="VIt-LK-hrm"/>
+                                    <outletCollection property="indicators" destination="DWT-Kw-o46" collectionClass="NSMutableArray" id="cAa-y9-iFH"/>
+                                </connections>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgAvatarDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Ch2-Rw-nqu">
                                 <rect key="frame" x="132" y="44" width="150" height="150"/>
@@ -88,7 +92,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1r-vb-g2D" userLabel="Passport info View">
-                                <rect key="frame" x="0.0" y="238" width="414" height="434"/>
+                                <rect key="frame" x="0.0" y="238" width="414" height="454"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Yi-x7-rZT">
                                         <rect key="frame" x="40" y="10" width="334" height="195"/>
@@ -236,7 +240,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hf-yp-ukp" customClass="CommandableButton" customModule="ConstantTechnologies" customModuleProvider="target">
-                                        <rect key="frame" x="157" y="350" width="100" height="40"/>
+                                        <rect key="frame" x="157" y="370" width="100" height="40"/>
                                         <color key="backgroundColor" name="Orange"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="7Pv-QS-hmA"/>
@@ -263,7 +267,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-np-yXp" userLabel="Profile Info View">
-                                <rect key="frame" x="0.0" y="238" width="414" height="434"/>
+                                <rect key="frame" x="0.0" y="238" width="414" height="454"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9uO-dC-oKP">
                                         <rect key="frame" x="40" y="10" width="334" height="195"/>
@@ -370,7 +374,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWh-o3-kgi" customClass="CommandableButton" customModule="ConstantTechnologies" customModuleProvider="target">
-                                        <rect key="frame" x="157" y="350" width="100" height="40"/>
+                                        <rect key="frame" x="157" y="370" width="100" height="40"/>
                                         <color key="backgroundColor" name="Orange"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="CG5-c6-u87"/>
@@ -400,7 +404,7 @@
                                 </constraints>
                             </view>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wpv-PU-cNh" customClass="BindableActivityIndicator" customModule="ConstantTechnologies" customModuleProvider="target">
-                                <rect key="frame" x="188.66666666666666" y="317.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="188.66666666666666" y="327.66666666666669" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -432,7 +436,7 @@
                         <outlet property="cjNumberTextField" destination="njM-vB-RNi" id="jMP-YZ-Tf5"/>
                         <outlet property="emailTextField" destination="8R2-zU-uxM" id="WEq-Ch-RbH"/>
                         <outlet property="fullNameTextField" destination="UKv-20-fr8" id="9PJ-2M-DDl"/>
-                        <outlet property="leftIndicatorWidth" destination="KTC-8X-Dw6" id="uHI-43-KQ8"/>
+                        <outlet property="indicatorView" destination="yfO-HK-Woe" id="GCz-V5-rAx"/>
                         <outlet property="nextButton" destination="VWh-o3-kgi" id="4ce-0m-DwG"/>
                         <outlet property="passportInfoView" destination="F1r-vb-g2D" id="vNZ-KZ-u0o"/>
                         <outlet property="passportOrIdTextField" destination="8nI-Q7-gDi" id="VwO-IG-323"/>
@@ -440,10 +444,7 @@
                         <outlet property="profileImageView" destination="Ch2-Rw-nqu" id="n3B-UI-oC3"/>
                         <outlet property="profileInfoView" destination="XXJ-np-yXp" id="DWt-S6-HIS"/>
                         <outlet property="radioButtonsContainer" destination="Qsy-n7-xQf" id="PD1-Nj-HnX"/>
-                        <outlet property="righthIndIndicatorWidth" destination="jFS-SU-gtK" id="vWc-7I-DNn"/>
                         <outlet property="submitButton" destination="7hf-yp-ukp" id="2Rn-Qi-gWt"/>
-                        <outletCollection property="indicatorView" destination="XmW-Ed-Xem" collectionClass="NSMutableArray" id="yyz-Wi-KMR"/>
-                        <outletCollection property="indicatorView" destination="DWT-Kw-o46" collectionClass="NSMutableArray" id="E10-Xt-HUL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -462,7 +463,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dIB-aM-m0U" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="mZc-0N-uCs">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="Purple"/>
                         <textAttributes key="titleTextAttributes">

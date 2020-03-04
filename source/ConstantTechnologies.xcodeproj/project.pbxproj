@@ -35,6 +35,8 @@
 		D405F460240EE02300C2E768 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F45F240EE02300C2E768 /* UIView+Extension.swift */; };
 		D405F462240EEC0200C2E768 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F461240EEC0200C2E768 /* RegisterViewController.swift */; };
 		DFBBF9DEE79CB773F8570047 /* Pods_ConstantTechnologies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B18A2B4672F349F267C1239 /* Pods_ConstantTechnologies.framework */; };
+		E292C6852410612E00D0AF41 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292C6842410612E00D0AF41 /* UIColor+App.swift */; };
+		E292C687241061C200D0AF41 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292C686241061C200D0AF41 /* IndicatorView.swift */; };
 		E2E16A3C240FC26A00877B51 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A3B240FC26A00877B51 /* RadioButton.swift */; };
 		E2E16A3E240FCB3000877B51 /* RadioButtonsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A3D240FCB3000877B51 /* RadioButtonsContainer.swift */; };
 		E2E16A40240FE41800877B51 /* DialogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F452240ECD3500C2E768 /* DialogService.swift */; };
@@ -122,6 +124,8 @@
 		D405F45F240EE02300C2E768 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D405F461240EEC0200C2E768 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DA359025E20E3BF927B8F1A8 /* Pods-ConstantTechnologiesViewModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstantTechnologiesViewModels.debug.xcconfig"; path = "Target Support Files/Pods-ConstantTechnologiesViewModels/Pods-ConstantTechnologiesViewModels.debug.xcconfig"; sourceTree = "<group>"; };
+		E292C6842410612E00D0AF41 /* UIColor+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
+		E292C686241061C200D0AF41 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		E2E16A3B240FC26A00877B51 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		E2E16A3D240FCB3000877B51 /* RadioButtonsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonsContainer.swift; sourceTree = "<group>"; };
 		E2E16A41240FE7CE00877B51 /* RegisterViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Keyboard.swift"; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 				E2E16A3B240FC26A00877B51 /* RadioButton.swift */,
 				E2E16A3D240FCB3000877B51 /* RadioButtonsContainer.swift */,
 				E2E16A6224102D7C00877B51 /* BindableActivityIndicator.swift */,
+				E292C686241061C200D0AF41 /* IndicatorView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -363,6 +368,7 @@
 			children = (
 				D405F45F240EE02300C2E768 /* UIView+Extension.swift */,
 				E2E16A4F2410019D00877B51 /* CommandableButton+Enabled.swift */,
+				E292C6842410612E00D0AF41 /* UIColor+App.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -671,6 +677,7 @@
 				E2E16A3C240FC26A00877B51 /* RadioButton.swift in Sources */,
 				E2E16A502410019D00877B51 /* CommandableButton+Enabled.swift in Sources */,
 				E2E16A40240FE41800877B51 /* DialogService.swift in Sources */,
+				E292C687241061C200D0AF41 /* IndicatorView.swift in Sources */,
 				D405F402240EB29700C2E768 /* AppDelegate.swift in Sources */,
 				E2E16A3E240FCB3000877B51 /* RadioButtonsContainer.swift in Sources */,
 				D405F437240EB96600C2E768 /* main.swift in Sources */,
@@ -680,6 +687,7 @@
 				E2E16A42240FE7CE00877B51 /* RegisterViewController+Keyboard.swift in Sources */,
 				E2E16A6324102D7C00877B51 /* BindableActivityIndicator.swift in Sources */,
 				D405F439240EB97000C2E768 /* Startup.swift in Sources */,
+				E292C6852410612E00D0AF41 /* UIColor+App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
