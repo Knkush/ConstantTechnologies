@@ -16,7 +16,8 @@ extension Container {
     func register() -> Container {
         // MARK: - Services -
         self.autoregister(IDialogService.self, initializer: DialogService.init)
-        
+        self.autoregister(IPhotoCatchService.self, initializer: PhotoCatchService.init)
+
         return self
     }
 }

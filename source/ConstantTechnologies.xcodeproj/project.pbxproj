@@ -44,6 +44,9 @@
 		E2E16A49240FF09D00877B51 /* SubmitCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A48240FF09D00877B51 /* SubmitCommand.swift */; };
 		E2E16A4E240FF60D00877B51 /* UserItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A4C240FF26200877B51 /* UserItemViewModel.swift */; };
 		E2E16A502410019D00877B51 /* CommandableButton+Enabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A4F2410019D00877B51 /* CommandableButton+Enabled.swift */; };
+		E2E16A5224100C7000877B51 /* PhotoCatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A5124100C7000877B51 /* PhotoCatchService.swift */; };
+		E2E16A5424100F1D00877B51 /* CatchPhotoCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A5324100F1D00877B51 /* CatchPhotoCommand.swift */; };
+		E2E16A5624100F4800877B51 /* PhotoCatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E16A5524100F4800877B51 /* PhotoCatchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +125,9 @@
 		E2E16A48240FF09D00877B51 /* SubmitCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitCommand.swift; sourceTree = "<group>"; };
 		E2E16A4C240FF26200877B51 /* UserItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemViewModel.swift; sourceTree = "<group>"; };
 		E2E16A4F2410019D00877B51 /* CommandableButton+Enabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandableButton+Enabled.swift"; sourceTree = "<group>"; };
+		E2E16A5124100C7000877B51 /* PhotoCatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCatchService.swift; sourceTree = "<group>"; };
+		E2E16A5324100F1D00877B51 /* CatchPhotoCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchPhotoCommand.swift; sourceTree = "<group>"; };
+		E2E16A5524100F4800877B51 /* PhotoCatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCatchService.swift; sourceTree = "<group>"; };
 		E6FAF5119D9C60D1E1ABFA53 /* Pods_ConstantTechnologiesViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConstantTechnologiesViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5D1FFA0E094AD40078CFDB /* Pods-ConstantTechnologiesViewModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstantTechnologiesViewModels.release.xcconfig"; path = "Target Support Files/Pods-ConstantTechnologiesViewModels/Pods-ConstantTechnologiesViewModels.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -302,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				D405F454240ECD4B00C2E768 /* IDialogService.swift */,
+				E2E16A5524100F4800877B51 /* PhotoCatchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -310,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				D405F452240ECD3500C2E768 /* DialogService.swift */,
+				E2E16A5124100C7000877B51 /* PhotoCatchService.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 			children = (
 				D405F45C240ED2C600C2E768 /* RegisterViewModel.swift */,
 				E2E16A43240FEC2D00877B51 /* SetupRegisterCommand.swift */,
+				E2E16A5324100F1D00877B51 /* CatchPhotoCommand.swift */,
 				E2E16A48240FF09D00877B51 /* SubmitCommand.swift */,
 				E2E16A4C240FF26200877B51 /* UserItemViewModel.swift */,
 			);
@@ -627,6 +636,7 @@
 				E2E16A3E240FCB3000877B51 /* RadioButtonsContainer.swift in Sources */,
 				D405F437240EB96600C2E768 /* main.swift in Sources */,
 				D405F462240EEC0200C2E768 /* RegisterViewController.swift in Sources */,
+				E2E16A5224100C7000877B51 /* PhotoCatchService.swift in Sources */,
 				D405F44D240ECA2A00C2E768 /* CommandableButton.swift in Sources */,
 				E2E16A42240FE7CE00877B51 /* RegisterViewController+Keyboard.swift in Sources */,
 				D405F439240EB97000C2E768 /* Startup.swift in Sources */,
@@ -637,6 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E16A5624100F4800877B51 /* PhotoCatchService.swift in Sources */,
 				D405F43F240EBA6A00C2E768 /* ServiceLocator.swift in Sources */,
 				D405F455240ECD4B00C2E768 /* IDialogService.swift in Sources */,
 				D405F43B240EB97C00C2E768 /* Startup.swift in Sources */,
@@ -657,6 +668,7 @@
 				D405F445240EC8E700C2E768 /* Command.swift in Sources */,
 				E2E16A47240FEF0500877B51 /* Optional+Empty.swift in Sources */,
 				D405F45B240ED2A600C2E768 /* IRegisterViewModel.swift in Sources */,
+				E2E16A5424100F1D00877B51 /* CatchPhotoCommand.swift in Sources */,
 				E2E16A4E240FF60D00877B51 /* UserItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

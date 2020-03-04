@@ -11,7 +11,9 @@ import ConstantTechnologiesCore
 
 internal class RegisterViewModel: IRegisterViewModel {
     private let dialogService: IDialogService
+    private let photoCatchService: IPhotoCatchService
     lazy var setupCommand: ICommand = SetupRegisterCommand(self)
+    lazy var catchPhotoCommand: ICommand = CatchPhotoCommand(self, self.dialogService, self.photoCatchService)
     lazy var submitCommand: ICommand = SubmitCommand(self, self.dialogService)
     var image = Observable<Data?>(nil)
     let fullName = Observable<String?>(nil)
@@ -23,7 +25,9 @@ internal class RegisterViewModel: IRegisterViewModel {
     let isPassport = Observable<Bool>(true)
  
     
-    init(_ dialogService: IDialogService) {
+    init(_ photoCatchService: IPhotoCatchService,
+         _ dialogService: IDialogService) {
         self.dialogService = dialogService
+        self.photoCatchService = photoCatchService
     }
 }

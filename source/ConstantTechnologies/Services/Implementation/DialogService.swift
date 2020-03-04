@@ -31,7 +31,7 @@ class DialogService: IDialogService {
             let alertController = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
             
             if let cancelButton = cancelButton {
-                alertController.addAction(UIAlertAction(title: cancelButton, style: .default, handler: { (_) in
+                alertController.addAction(UIAlertAction(title: cancelButton, style: .cancel, handler: { (_) in
                     fulfill(nil)
                 }))
             }

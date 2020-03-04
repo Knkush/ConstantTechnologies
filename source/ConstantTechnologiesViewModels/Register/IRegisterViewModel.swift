@@ -10,6 +10,7 @@ import Bond
 
 public protocol IRegisterViewModel {
     var setupCommand: ICommand { get }
+    var catchPhotoCommand: ICommand { get }
     var submitCommand: ICommand { get }
     var image: Observable<Data?> { get }
     var fullName: Observable<String?> { get }
